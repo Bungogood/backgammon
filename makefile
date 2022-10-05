@@ -7,7 +7,7 @@ OBJ_DIR := .obj
 TARGET  := $(BIN_DIR)/backgammon
 
 CXX	     = g++
-CXXFLAGS = -std=c++20 -c -g -Wall
+CXXFLAGS = -std=gnu++2a -c -g -Wall
 
 SOURCES := $(shell find $(SRC_DIR) -name "*.cpp")
 OBJECTS := $(patsubst $(SRC_DIR)/%.cpp,$(OBJ_DIR)/%.o,$(SOURCES))
